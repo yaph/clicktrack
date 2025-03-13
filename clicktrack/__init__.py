@@ -33,6 +33,7 @@ def create(beats, tempo, time_signature):
         midi.addNote(track, channel, pitch, time + beat * beat_duration, 0.1, volume)
 
     # Write MIDI file
-    filename = f'{beats}-beats-{time_signature.replace('/', '-')}-meter-{tempo}-bpm.mid'
+    ts_slug = time_signature.replace('/', '-')
+    filename = f'{beats}-beats-{ts_slug}-meter-{tempo}-bpm.mid'
     with open(filename, 'wb') as output:
         midi.writeFile(output)
