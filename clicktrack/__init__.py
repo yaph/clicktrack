@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2025-present Ramiro Gómez <code@ramiro.org>
 #
 # SPDX-License-Identifier: MIT
-from midiutil import MIDIFile
+from midiutil import MIDIFile  # type: ignore
 
 
 def create(beats, tempo, time_signature):
