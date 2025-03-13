@@ -11,11 +11,13 @@ requires-python = ">=3.10"
 license = "MIT"
 keywords = [
   'audio',
-  'midi',
-  'click track',
-  'music',
   'cli',
+  'click track',
   'command line',
+  'count-in',
+  'midi-generator',
+  'midi',
+  'music',
 ]
 authors = [
   { name = "Ramiro Gómez", email = "code@ramiro.org" },
